@@ -271,7 +271,8 @@ app.get('/search/:keyword', async (req, res) => {
         const results = await cloth.find({
             $or: [
                 { name: { $regex: keyword, $options: "i" } },
-                { content: { $regex: keyword, $options: "i" } }
+                { content: { $regex: keyword, $options: "i" } },
+                 {finishing:{$regex: keyword, $options: "i"}},
             ]
         });
         res.json(results);
