@@ -30,7 +30,7 @@ app.use(express.urlencoded({ extended: true }));
 var allowedOrigins = ['http://localhost:5173', 'https://fabeeno.onrender.com'];
 
 app.use(cors({
-    origin: ['https://fabeeno-ld6k.onrender.com',"http://localhost:5173"], // Specify the allowed origin
+    origin: ['https://fabeeno-ld6k.onrender.com',"http://localhost:5173","https://fabeeno-sabircodes-projects.vercel.app","https://vercel.com/sabircodes-projects/fabeeno/4J3BPQUBXJWwTkCHkz1kJyc61wKp","https://fabeeno.vercel.app"], // Specify the allowed origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
   }));
